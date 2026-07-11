@@ -409,7 +409,7 @@ def incoming_sms():
             "coastalcultures.club/legal.html#terms\n\n"
             "We'll text you when the next drop is ready. "
             "Reply STOP anytime to leave the list.\n\n"
-            "— The Brine Surgeons 🥬"
+            "— The Brine Surgeons 🌱"
         )
 
     # ── 3. STOP ──────────────────────────────
