@@ -48,14 +48,13 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: 
+    background:
       radial-gradient(ellipse at 20% 50%, rgba(107,124,90,0.15) 0%, transparent 60%),
       radial-gradient(ellipse at 80% 50%, rgba(139,94,60,0.2) 0%, transparent 60%);
     pointer-events: none;
   }
 
   .hero-eyebrow {
-    font-family: 'Source Sans 3', sans-serif;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.25em;
@@ -93,7 +92,6 @@
     display: inline-block;
     background: var(--brine);
     color: var(--cream);
-    font-family: 'Source Sans 3', sans-serif;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.08em;
@@ -207,19 +205,6 @@
 
   .product-desc { font-size: 15px; color: #5a4a38; font-weight: 300; }
 
-  .coming-soon {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--sage);
-    background: var(--parchment);
-    border: 1px solid var(--mist);
-    padding: 3px 10px;
-    display: inline-block;
-    margin-bottom: 0.75rem;
-  }
-
   /* ── JOIN section ── */
   .join-bg { background: var(--brine); padding: 5rem 2rem; }
   .join-inner { max-width: 680px; margin: 0 auto; text-align: center; }
@@ -275,41 +260,7 @@
   }
 
   .phone-note { font-size: 13px; color: rgba(212,201,176,0.6); letter-spacing: 0.05em; }
-
-  .stop-note {
-    font-size: 13px;
-    color: rgba(212,201,176,0.5);
-    margin-top: 2rem;
-    font-style: italic;
-  }
-
-  /* ── Gallery placeholder ── */
-  .gallery-bg { background: var(--cream); padding: 5rem 2rem; }
-  .gallery-inner { max-width: 780px; margin: 0 auto; }
-
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-top: 2.5rem;
-  }
-
-  .gallery-cell {
-    aspect-ratio: 1;
-    background: var(--parchment);
-    border: 1px solid var(--mist);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    color: var(--mist);
-    font-size: 13px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  .gallery-cell .jar { font-size: 2.5rem; }
+  .stop-note { font-size: 13px; color: rgba(212,201,176,0.5); margin-top: 2rem; font-style: italic; }
 
   /* ── Footer ── */
   footer {
@@ -324,16 +275,29 @@
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     color: var(--cream);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
   }
 
-  footer p { opacity: 0.5; font-size: 13px; }
+  footer p { opacity: 0.6; font-size: 13px; margin-bottom: 0.4rem; }
+  footer a { color: var(--gold); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0.75rem 0;
+    flex-wrap: wrap;
+  }
+
+  .social-links a { color: var(--gold); text-decoration: none; font-size: 13px; opacity: 0.9; }
+  .social-links a:hover { text-decoration: underline; }
 
   /* ── Responsive ── */
   @media (max-width: 600px) {
-    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
     .sms-box { padding: 1.5rem; }
     .product-card { padding: 1.5rem; }
+    .social-links { gap: 1rem; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -347,7 +311,7 @@
 <section class="hero">
   <p class="hero-eyebrow">Humboldt County, California</p>
   <h1>Coastal<br><em>Cultures</em></h1>
-  <p class="hero-sub">A fermentation club rooted in community, health, and resilience</p>
+  <p class="hero-sub">Craft Ferments & Artisan Goods rooted in community, health, and resilience</p>
   <a href="#join" class="hero-cta">Join the club</a>
   <div class="scroll-hint">↓ scroll</div>
 </section>
@@ -356,9 +320,10 @@
 <section class="section">
   <p class="section-label">Who we are</p>
   <h2>Hello, friend.</h2>
-  <p>We warmly invite you to join our growing community of culture, health, and resilience. Promoting healing and connection to self and others, we are offering you billions of new friends with our ferments.</p>
-  <p>Our initial offering is a traditional local cabbage sauerkraut — crafted with care and offered at <strong>$12 donation/trade</strong> in the spirit of a circular economy, for a 16oz returnable jar.</p>
-  <p>We will be expanding our future batches to include seasonal crafted ferments, Chinese pickles, kimchis, vinegars, misos, and other bubbly creations. We would love for you to be part of our club and support our love for fermenting and creativity in our community.</p>
+  <p>We warmly invite you to join our club and growing community rooted in culture, health, and resilience. Promoting healing and connection to self and others, we are offering you billions of new friends through our ferments and craft goods.</p>
+  <p>Our club is just starting off with small seasonal batches, made when time and ingredients align. Please grow with us and have patience while we create and connect this community.</p>
+  <p>We will be expanding our future batches to include seasonal crafted ferments, Chinese pickles and fermented vegetables, kimchis, vinegars, misos, and many other bubbly creations. Future offerings may also include artisan goods like bone broths, tallow, honey, and other craft recipes.</p>
+  <p>We love what we do and are so excited to share it with our community.</p>
   <p class="signature">❤️ The Brine Surgeons</p>
 </section>
 
@@ -367,34 +332,13 @@
 <!-- ── Products ── -->
 <div class="products-bg">
   <div class="products-inner">
-    <p class="section-label">What's in the jar</p>
-    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);font-weight:400;color:var(--bark);margin-bottom:2rem;">Current &amp; coming drops</h2>
+    <p class="section-label">Current Drop</p>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);font-weight:400;color:var(--bark);margin-bottom:2rem;">What's available now</h2>
 
     <div class="product-card">
       <div class="product-name">Traditional Sauerkraut</div>
-      <div class="product-price">$12 donation / trade · 16oz returnable jar</div>
-      <div class="product-desc">Classic local cabbage ferment. Simple, alive, and full of good bacteria. Our founding batch and the heart of the club.</div>
-    </div>
-
-    <div class="product-card">
-      <div class="coming-soon">Coming soon</div>
-      <div class="product-name">Seasonal Kimchis</div>
-      <div class="product-price">Batch pricing TBD</div>
-      <div class="product-desc">Traditional and creative kimchi variations made with locally sourced vegetables.</div>
-    </div>
-
-    <div class="product-card">
-      <div class="coming-soon">Coming soon</div>
-      <div class="product-name">Chinese Pickles, Misos &amp; Vinegars</div>
-      <div class="product-price">Batch pricing TBD</div>
-      <div class="product-desc">Expanding into fermented soy, grain-based cultures, and bright acidic preserves.</div>
-    </div>
-
-    <div class="product-card">
-      <div class="coming-soon">Coming soon</div>
-      <div class="product-name">Seasonal Craft Ferments</div>
-      <div class="product-price">Batch pricing TBD</div>
-      <div class="product-desc">Rotating small-batch creations made from whatever is growing locally and inspiring us.</div>
+      <div class="product-price">Suggested donation $12 · 16oz returnable jar · $2 jar credit</div>
+      <div class="product-desc">Classic local cabbage ferment. Salt. Simple, alive, and full of good bacteria. Our founding batch and the heart of the club.</div>
     </div>
   </div>
 </div>
@@ -404,7 +348,7 @@
   <div class="join-inner">
     <p class="section-label">Get on the list</p>
     <h2>Reserve your jars</h2>
-    <p>Members get a text when a new drop is ready. Reply to order. It's that simple. No app, no account — just a text message.</p>
+    <p>Members get a text when a new drop is ready. Reply to order. No app, no account — just a text message.</p>
 
     <div class="sms-box">
       <div class="sms-step">
@@ -423,23 +367,7 @@
 
     <div class="phone-number">+1 (707) 702-4749</div>
     <div class="phone-note">Text JOIN to this number</div>
-
     <p class="stop-note">Reply STOP at any time to leave the list. No hard feelings.</p>
-  </div>
-</div>
-
-<!-- ── Gallery ── -->
-<div class="gallery-bg">
-  <div class="gallery-inner">
-    <p class="section-label">From the fermentation lab</p>
-    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);font-weight:400;color:var(--bark);margin-bottom:0.5rem;">The jars</h2>
-    <p style="color:var(--ink);font-weight:300;">Photos coming soon — follow along as we grow.</p>
-
-    <div class="gallery-grid">
-      <div class="gallery-cell"><div class="jar">🫙</div><span>Batch 001</span></div>
-      <div class="gallery-cell"><div class="jar">🥬</div><span>Sauerkraut</span></div>
-      <div class="gallery-cell"><div class="jar">🫙</div><span>Coming soon</span></div>
-    </div>
   </div>
 </div>
 
@@ -447,8 +375,13 @@
 <footer>
   <div class="footer-brand">Coastal Cultures</div>
   <p>Humboldt County, California · A community fermentation club</p>
-  <p style="margin-top:0.5rem;">Join the club: text JOIN to +1 (707) 702-4749</p>
- <p style="margin-top:0.5rem;"><a href="legal.html" style="color:#c8963a;text-decoration:none;">Privacy Policy &amp; Terms</a></p>
+  <div class="social-links">
+    <a href="https://instagram.com/coastalcultures707" target="_blank">📷 @coastalcultures707</a>
+    <a href="mailto:coastalcultures707@gmail.com">✉️ coastalcultures707@gmail.com</a>
+  </div>
+  <p>Questions? Text us at +1 (707) 702-4749</p>
+  <p style="margin-top:0.5rem;"><a href="legal.html">Privacy Policy & Terms</a></p>
+  <p style="margin-top:0.75rem; opacity:0.4;">© 2026 Coastal Cultures</p>
 </footer>
 
 </body>
